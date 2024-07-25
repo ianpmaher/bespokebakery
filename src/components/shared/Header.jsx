@@ -1,14 +1,16 @@
 // import Contacts from "../Contacts";
 
 import SteamyBread from "../SteamyBread";
-import SteamyCoffee from "./SteamyCoffee";
+import SteamyCoffee from "../SteamyCoffee";
 
 function Header() {
     return (
-        <header className=" flex flex-row justify-center items-center bg-modernDolchLight-main-color w-full sm:min-h-30 md:max-h-32 text-black rounded-2xl outline outline-modernDolchLight-text-color">
-            <div className="flex items-end justify-evenly md:w-1/4 py-1">
-                <SteamyBread />
-                <SteamyCoffee />
+        <header className="flex flex-col bg-modernDolchLight-main-color text-black rounded-2xl">
+            <div className=" flex self-center justify-self-center bg-modernDolchLight-main-color text-black rounded-2xl">
+                <div className="flex w-screen items-center justify-center py-1">
+                    <SteamyBread />
+                    <SteamyCoffee />
+                </div>
             </div>
             <a href="/">
                 <h1 className="text-3xl md:text-4xl">Bespoke Bakery</h1>

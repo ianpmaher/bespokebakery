@@ -18,7 +18,7 @@ const SteamyCoffee = () => {
     const timeProgress = useTransform(time, [0, 8000], [0, 0.8]);
 
     return (
-        <div className="flex justify-center my-0 mx-auto min-h-10 max-h-44 min-w-10 max-w-44 ">
+        <div className=" my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-32 ">
             <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="80%"

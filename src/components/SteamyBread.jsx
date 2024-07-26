@@ -16,7 +16,7 @@ const SteamyBread = ( ) => {
 
     return (
         // <div className=" flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 self-center">
-        <div className=" my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-32 ">
+        <div className=" my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-24 ">
             <motion.svg
                 width="100%"
                 height="70%"

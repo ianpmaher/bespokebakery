@@ -33,18 +33,18 @@ const MenuTest = () => {
                                     <li key={subIndex} className="border-b border-gray-300 py-2">
                                         <h3 className="text-xl font-medium">{subItem.name}</h3>
                                         <p>
-                                            ingredients:
+                                            ingredients |
                                             <span className="font-bold ml-1">{subItem.ingredients.join(", ")}</span>
                                         </p>
                                         <p className="mt-1">
-                                            price: <span>{subItem.price}</span>
+                                            price | <span className="font-bold">${subItem.price}</span>
                                         </p>
                                         <p className="mt-1">
-                                            allergens? <span>{subItem.allergens.join(", ")}</span>
+                                            allergens | <span className="font-bold">{subItem.allergens.join(", ")}</span>
                                         </p>
                                         <p className="mt-1">
-                                            gluten?{" "}
-                                            <span>{subItem.gluten_free ? "Gluten Free" : "Contains Gluten"}</span>
+                                            gluten | {" "}
+                                            <span className="font-bold">{subItem.gluten_free ? "Gluten Free" : "Contains Gluten"}</span>
                                         </p>
                                     </li>
                                 ))}

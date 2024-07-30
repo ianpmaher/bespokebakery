@@ -42,6 +42,9 @@ const config = {
                     "colorful-error-extra-color": "#e0556d",
                 },
             },
+            fontFamily: {
+                sans: ["Cabin", "sans-serif"],
+            }
         },
     },
     plugins: [],

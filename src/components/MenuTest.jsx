@@ -18,7 +18,7 @@ const MenuTest = () => {
         <div className="max-w-4xl mx-auto p-4">
             <h1 className="text-3xl font-bold mb-4">Menu Test</h1>
             {data.map((item, index) => (
-                <div key={index} className="flex flex-col md:flex-row items-start mb-2">
+                <div key={index} className="flex flex-col items-center mb-2 border">
                     <h2
                         onClick={() => toggleAccordion(index)}
                         className="text-2xl font-semibold cursor-pointer p-2 hover:bg-gray-100 transition-colors flex-shrink-0"
@@ -27,7 +27,7 @@ const MenuTest = () => {
                     </h2>
                     {/* Render subitems only if the index matches openIndex */}
                     {openIndex === index && (
-                        <div className="flex-1 pl-4">
+                        <div className="flex-1">
                             <ul>
                                 {item.items.map((subItem, subIndex) => (
                                     <li key={subIndex} className="border-b border-gray-300 py-2">

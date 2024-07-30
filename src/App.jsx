@@ -13,7 +13,7 @@ function App() {
     });
 
     return (
-        <div className=" mx-auto my-0 text-center">
+        <div className=" mx-auto my-0 text-center font-sans">
             <div className="">
                 <Header />
             </div>

@@ -41,6 +41,20 @@ const config = {
                     "colorful-error-color": "#ea8a9a",
                     "colorful-error-extra-color": "#e0556d",
                 },
+                baguette: {
+                    crust: {
+                      tan: '#D2B48C',
+                      lightBrown: '#C19A6B',
+                      saddleBrown: '#8B4513',
+                      sienna: '#A0522D',
+                    },
+                    innerBread: {
+                      cornsilk: '#FFF8DC',
+                      linen: '#FAF0E6',
+                      wheat: '#F5DEB3',
+                      khaki: '#F0E68C',
+                    },
+                  },
             },
             fontFamily: {
                 sans: ["Cabin", "sans-serif"],

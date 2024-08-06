@@ -13,7 +13,7 @@ function App() {
     });
 
     return (
-        <div className=" mx-auto my-0 text-center font-sans">
+        <div className=" mx-auto my-0 text-center font-sans bg-modernDolchLight-caret-color">
             <div className="">
                 <Header />
             </div>
@@ -22,7 +22,13 @@ function App() {
                     <div className=" w-screen flex justify-center items-center">
                         <MenuTest />
                     </div>
-                    <div className="h-screen flex justify-center items-center">
+                    <div className=" h-[50vh] flex justify-center items-center">
+                        <ContentContainer />
+                    </div>
+                    <div className=" h-[50vh] flex justify-center items-center">
+                        <ContentContainer />
+                    </div>
+                    <div className=" h-[50vh] flex justify-center items-center">
                         <ContentContainer />
                     </div>
                 </div>

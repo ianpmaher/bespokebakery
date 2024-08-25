@@ -15,7 +15,7 @@ const MenuTest = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-4">
+        <div className="max-w-xl mx-auto p-4 flex flex-col self-center justify-center ">
             <h1 className="text-3xl font-bold mb-4">Menu Test</h1>
             {data.map((item, index) => (
                 <div key={index} className="flex flex-col items-center mb-2 border hover:bg-gray-100 transition-colors">

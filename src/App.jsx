@@ -13,13 +13,13 @@ function App() {
     });
 
     return (
-        <div className=" mx-auto my-0 text-center font-sans">
+        <div className=" mx-auto my-0 text-center font-sans overflow-hidden">
             <div className="">
                 <Header className="flex flex-col text-black fixed top-0 left-0" />
             </div>
             <main id="mainmain" className="my-0 mx-auto">
                 <div className="flex flex-col w-full text-black text-center  bg-bake-dusty-rose bg-fixed">
-                    <div className=" w-screen flex justify-center items-center my-10">
+                    <div className=" w-screen flex justify-self-center self-center justify-center items-center my-10">
                         <MenuTest />
                     </div>
                     <div className=" h-[50vh] flex justify-center items-center">

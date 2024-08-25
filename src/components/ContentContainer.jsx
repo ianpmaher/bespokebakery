@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const ContentContainer = () => {
     return (
-        <div className=" flex justify-normal items-center gap-32">
+        <div className=" flex justify-normal items-center gap-24">
             <Bread />
             <Carousel 
                 images={[

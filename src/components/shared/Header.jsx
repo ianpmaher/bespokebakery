@@ -2,6 +2,7 @@
 
 import SteamyBread from "../SteamyBread";
 import SteamyCoffee from "../SteamyCoffee";
+import Nav from "./Nav";
 
 function Header(props) {
   return (
@@ -16,6 +17,7 @@ function Header(props) {
               <h3 className="text-md md:text-lg">leaven | local</h3>
             </div>
           </a>
+          <Nav />
           <SteamyCoffee />
         </div>
       </div>

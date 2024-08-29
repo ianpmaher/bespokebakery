@@ -5,36 +5,30 @@ import "aos/dist/aos.css";
 import ContentContainer from "./components/ContentContainer";
 import MenuTest from "./components/MenuTest";
 import Header from "./components/shared/Header";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    Aos.init({});
+  });
 
-    useEffect(() => {
-        Aos.init({});
-    });
-
-    return (
-        <div className=" mx-auto my-0 text-center font-sans overflow-hidden">
-            <div className="">
-                <Header className="flex flex-col text-black fixed top-0 left-0" />
-            </div>
-            <main id="mainmain" className="my-0 mx-auto">
-                <div className="flex flex-col w-full text-black text-center  bg-bake-dusty-rose bg-fixed">
-                    <div className=" w-screen flex justify-self-center self-center justify-center items-center my-10">
-                        <MenuTest />
-                    </div>
-                    <div className=" h-[50vh] flex justify-center items-center">
-                        <ContentContainer />
-                    </div>
-                    <div className=" h-[50vh] flex justify-center items-center">
-                        <ContentContainer />
-                    </div>
-                    <div className=" h-[50vh] flex justify-center items-center">
-                        <ContentContainer />
-                    </div>
-                </div>
-            </main>
-        </div>
-    );
+  return (
+    <div className="mx-auto my-0 text-center font-sans overflow-hidden min-h-screen">
+      <div className="">
+        <Header className="flex flex-col text-black fixed top-0 left-0" />
+      </div>
+      <main id="mainmain" className="my-0 mx-auto bg-bake-dusty-rose bg-fixed text-center">
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/menu" element={<MenuTest />} />
+          <Route path="/content" element={<ContentContainer />} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
 
 export default App;

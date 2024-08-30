@@ -15,11 +15,11 @@ function App() {
   });
 
   return (
-    <div className="mx-auto my-0 text-center font-sans overflow-hidden min-h-screen">
+    <div className="mx-auto my-0 text-center font-sans overflow-hidden min-h-screen bg-bake-dusty-rose">
       <div className="">
-        <Header className="flex flex-col text-black fixed top-0 left-0" />
+        <Header className="static flex flex-col text-black top-0 left-0" />
       </div>
-      <main id="mainmain" className="my-0 mx-auto bg-bake-dusty-rose bg-fixed text-center">
+      <main id="mainmain" className="my-0 mx-auto bg-fixed text-center">
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

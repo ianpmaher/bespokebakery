@@ -1,48 +1,48 @@
 .bread-top {
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 .bread-bottom {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .scoring-mark {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 .steam-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 10;
 }
 .steam {
-    width: 8px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    animation: steam-animation 2s infinite ease-in-out;
+  width: 8px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: steam-animation 2s infinite ease-in-out;
 }
 .steam-1 {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 .steam-2 {
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .steam-3 {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 @keyframes steam-animation {
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-20px) scale(1.2);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-40px) scale(0.8);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-40px) scale(0.8);
+    opacity: 0;
+  }
 }

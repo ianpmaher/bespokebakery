@@ -1,7 +1,6 @@
 // import Contacts from "../Contacts";
 
 import SteamyBread from "../SteamyBread";
-import SteamyCoffee from "../SteamyCoffee";
 import Nav from "./Nav";
 
 function Header(props) {
@@ -18,7 +17,6 @@ function Header(props) {
             </div>
           </a>
           <Nav />
-          <SteamyCoffee />
         </div>
       </div>
 

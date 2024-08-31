@@ -1,10 +1,10 @@
-const SteamyBread = () => {
+const SteamyBread = ({ className }) => {
   // scrolling
 
   return (
     // <div className=" flex justify-center items-center my-0 mx-auto min-h-10 max-h-20 min-w-10 max-w-20 self-center">
 
-    <div className=" my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-24 ">
+    <div className={`${className} my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-24 `}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="70%" viewBox="0 0 719 570" fill="none">
         <path
           fillRule="evenodd"

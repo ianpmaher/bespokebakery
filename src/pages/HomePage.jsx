@@ -10,7 +10,7 @@ const HomePage = () => {
       </div>
       <div className="flex flex-col min-h-screen">
         <ContentContainer />
-        <div className=" overflow-scroll fixed top-0 left-0">
+        <div className="fixed top-2 right-0">
           <SteamyCoffee />
         </div>
       </div>

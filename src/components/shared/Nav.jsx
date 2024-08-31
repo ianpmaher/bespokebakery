@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <nav className="flex items-center justify-center gap-1">
       {pages.map((page) => (
-        <Link key={page.destination} to={page.destination} className="text-white bg-black p-0 hover:bg-gray-800 rounded-sm">
+        <Link key={page.destination} to={page.destination} className="text-white bg-black p-0 hover:bg-modernDolchLight-error-color hover:text-black rounded-sm transition-all duration-50 ease-in-out">
           {page.title}
         </Link>
       ))}

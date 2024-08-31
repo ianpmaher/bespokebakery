@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTime, useTransform } from "framer-motion";
 
-const SteamyCoffee = () => {
+const SteamyCoffee = ({ className }) => {
   // const [mounted, setMounted] = useState(false);
   // scrolling
   const ref = useRef(null);
@@ -18,7 +18,7 @@ const SteamyCoffee = () => {
   const timeProgress = useTransform(time, [0, 8000], [0, 0.8]);
 
   return (
-    <div className=" my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-24 ">
+    <div className={`${className} my-0 mx-auto min-h-16 max-h-32 min-w-10 max-w-24 `}>
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         width="80%"

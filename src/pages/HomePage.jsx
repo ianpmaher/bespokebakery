@@ -10,9 +10,9 @@ const HomePage = () => {
       </div>
       <div className="flex flex-col min-h-screen">
         <ContentContainer />
-        <div className="fixed top-2 right-0">
-          <SteamyCoffee />
-        </div>
+      </div>
+      <div className="fixed bottom-0 right-0">
+        <SteamyCoffee className="" />
       </div>
     </div>
   );

@@ -18,10 +18,10 @@ const MenuTest = () => {
     <div className="max-w-xl mx-auto p-4 flex flex-col self-center justify-center ">
       <h1 className="text-3xl font-bold mb-4">Menu Test</h1>
       {data.map((item, index) => (
-        <div key={index} className="flex flex-col items-center mb-2 border transition-colors bg-bake-espresso text-bake-warm-beige">
+        <div key={index} className="flex flex-col items-center mb-2 border transition-all bg-bake-espresso text-bake-warm-beige duration-500">
           <h2
             onClick={() => toggleAccordion(index)}
-            className="text-2xl font-semibold cursor-pointer p-2 flex-shrink-0 "
+            className="text-2xl font-semibold cursor-pointer p-2 flex-shrink-0 duration-500"
           >
             {item.name}
           </h2>

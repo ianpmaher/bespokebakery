@@ -1,8 +1,8 @@
 import "./bread.css"; // Ensure you have any necessary additional CSS
 
-const Bread = () => {
+const Bread = ({className}) => {
   return (
-    <div className="flex justify-center items-center h-64 bg-custom8008-bg-color rounded-xl">
+    <div className={`${className} flex justify-center items-center h-64 bg-custom8008-bg-color rounded-xl`}>
       <div className="bread-container relative w-64 h-32">
         <div className="bread-top absolute w-full h-20 bg-baguette-crust-tan rounded-t-full top-0 flex flex-col justify-center items-center">
           <div className="scoring-mark w-8/12 h-1 bg-baguette-crust-saddleBrown my-1"></div>

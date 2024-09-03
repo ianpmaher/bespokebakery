@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import Card from "./Card";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, className }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNext = () => {
@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
   const nextImageIndex = (currentImageIndex + 1) % images.length;
 
   return (
-    <div className="w-full h-full flex gap-2 ">
+    <div className={`${className} w-full h-full flex gap-2 `}>
       <button onClick={handlePrev} className="text-2xl">
         ⬅️
       </button>
